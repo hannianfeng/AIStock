@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AIStock</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fb_appid" translatable="false">651231527097653</string>
+    <string name="facebook_client_token" translatable="false">2652665e4a40e77493e855c919b0c18c</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="network_error">ネットワーク障害</string>
+    <string name="like">好き</string>
+</resources>

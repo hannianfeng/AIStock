@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    tools:context=".fragment.AIStockFragment">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="228dp"
+        android:background="@drawable/fragment_ai_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/fragment_ai_stock_border"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="30dp"
+            android:text="個別株診断測ればすぐわかる"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/user_stock_code"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/fragment_stock_code_border"
+            android:hint="株式コードまたは名称を入力してください"
+            android:paddingStart="12dp"
+            android:textColorHint="#969799"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_complete"
+            android:layout_width="190dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="26dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/loginbtn_border_ok"
+            android:text="すぐに診断してください"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/stock_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            android:text="累計...名が株式診断レポートを受け取りました"
+            android:textAlignment="center"
+            android:textColor="#C8CACC"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ai_stock1"
+        android:layout_width="164dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ai_stock_img1"
+        app:layout_constraintEnd_toStartOf="@id/ai_stock2"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@id/lin"
+        app:layout_constraintTop_toBottomOf="@id/lin" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:text="ChatGPT は市場の動向を追跡し、リアルタイムで株価の変化を予測します"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/ai_stock1"
+        app:layout_constraintEnd_toEndOf="@id/ai_stock1"
+        app:layout_constraintStart_toStartOf="@id/ai_stock1"
+        app:layout_constraintTop_toTopOf="@id/ai_stock1" />
+
+    <ImageView
+        android:id="@+id/ai_stock2"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ai_stock_img2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ai_stock1"
+        app:layout_constraintTop_toTopOf="@id/ai_stock1" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:text="24 時間オンラインで視聴 ディスク、リアルタイムのガイダンスと提案"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/ai_stock2"
+        app:layout_constraintEnd_toEndOf="@id/ai_stock2"
+        app:layout_constraintStart_toStartOf="@id/ai_stock2"
+        app:layout_constraintTop_toTopOf="@id/ai_stock2" />
+
+    <ImageView
+        android:id="@+id/ai_stock3"
+        android:layout_width="164dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ai_stock_img3"
+        app:layout_constraintEnd_toStartOf="@id/ai_stock4"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@id/lin"
+        app:layout_constraintTop_toBottomOf="@id/ai_stock1" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:text="「5大次元」を正確に分析潜在的な株式に対する洞察"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/ai_stock3"
+        app:layout_constraintEnd_toEndOf="@id/ai_stock3"
+        app:layout_constraintStart_toStartOf="@id/ai_stock3"
+        app:layout_constraintTop_toTopOf="@id/ai_stock3" />
+
+    <ImageView
+        android:id="@+id/ai_stock4"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ai_stock_img4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ai_stock3"
+        app:layout_constraintTop_toTopOf="@id/ai_stock3" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:text="個別銘柄のお問い合わせに対する即時フィードバック 結果とトラブルシューティング"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/ai_stock4"
+        app:layout_constraintEnd_toEndOf="@id/ai_stock4"
+        app:layout_constraintStart_toStartOf="@id/ai_stock4"
+        app:layout_constraintTop_toTopOf="@id/ai_stock4" />
+
+    <include
+        android:id="@+id/danmu1"
+        layout="@layout/danmu_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/lin"
+        app:layout_constraintTop_toBottomOf="@id/ai_stock4" />
+
+    <include
+        android:id="@+id/danmu2"
+        layout="@layout/danmu_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="@id/lin"
+        app:layout_constraintTop_toBottomOf="@id/danmu1" />
+
+    <include
+        android:id="@+id/danmu3"
+        layout="@layout/danmu_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toEndOf="@id/danmu2"
+        app:layout_constraintTop_toBottomOf="@id/danmu1" />
+    <include
+        android:id="@+id/danmu4"
+        layout="@layout/danmu_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="@id/lin"
+        app:layout_constraintTop_toBottomOf="@id/danmu2" />
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:background="@drawable/danmu_border"-->
+    <!--        android:gravity="center_vertical"-->
+    <!--        android:paddingHorizontal="12dp"-->
+    <!--        android:paddingVertical="9dp"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/lin"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/ai_stock4">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:ellipsize="end"-->
+    <!--            android:lines="1"-->
+    <!--            android:text="幸いなことに、AI がそれをテストし、時間内に..."-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textColor="#969799"-->
+    <!--            android:textSize="12sp" />-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="20dp"-->
+    <!--            android:layout_height="20dp"-->
+    <!--            android:layout_marginStart="4dp"-->
+    <!--            android:src="@drawable/like_white" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="4dp"-->
+    <!--            android:text="9527"-->
+    <!--            android:textColor="#969799"-->
+    <!--            android:textSize="14sp" />-->
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:background="@drawable/danmu_border"-->
+    <!--        android:gravity="center_vertical"-->
+    <!--        android:paddingHorizontal="12dp"-->
+    <!--        android:paddingVertical="9dp"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/lin"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/ai_stock4">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:ellipsize="end"-->
+    <!--            android:lines="1"-->
+    <!--            android:text="幸いなことに、AI がそれをテストし、時間内に..."-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textColor="#969799"-->
+    <!--            android:textSize="12sp" />-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="20dp"-->
+    <!--            android:layout_height="20dp"-->
+    <!--            android:layout_marginStart="4dp"-->
+    <!--            android:src="@drawable/like_white" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="4dp"-->
+    <!--            android:text="9527"-->
+    <!--            android:textColor="#969799"-->
+    <!--            android:textSize="14sp" />-->
+    <!--    </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

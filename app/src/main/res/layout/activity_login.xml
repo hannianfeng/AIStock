@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <LinearLayout
+        android:id="@+id/lin_telephone"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/telephone_border"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/telephone_choose_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/telephonePrefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="+080"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/telephone_choose"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/telephonr_img" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ed_telephone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="携帯番号を入力してください"
+            android:inputType="number"
+            android:textColor="#202020"
+            android:textColorHint="#C8CACC"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/img_telephone_clean"
+            android:layout_width="14dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginEnd="22dp"
+            android:src="@drawable/login_clean"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/telephone_border"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/captcha_login" />
+
+        <EditText
+            android:id="@+id/et_captcha"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:inputType="number"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_captcha"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:text="認証コードの取得"
+            android:textColor="#C8CACC"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/loginbtn_border"
+        android:text="登録する"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/login_loading"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginBottom="36dp">
+
+        <ImageView
+            android:id="@+id/img_agree"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/icon_picture_selected" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="『ユーザサービスプロトコル』 と 『プライバシーポリシー』 に同意す" />
+    </LinearLayout>
+</LinearLayout>

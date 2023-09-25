@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TransparentBottomSheetDialog" parent="Theme.Design.BottomSheetDialog">
+<!--        <item name="android:windowFrame">@null</item>-->
+<!--        <item name="android:windowIsFloating">true</item>-->
+<!--        <item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:background">@android:color/transparent</item>
+<!--        <item name="android:backgroundDimEnabled">true</item> &lt;!&ndash; 可以启用半透明背景 &ndash;&gt;-->
+    </style>
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="NoShadowBottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="android:elevation">0dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/danmu_border"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="9dp">
+
+    <TextView
+        android:id="@+id/tv_like"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="幸いなことに"
+        android:textAlignment="center"
+        android:textColor="#969799"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv_like"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/like_white" />
+
+    <TextView
+        android:id="@+id/tv_like_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="..."
+        android:textColor="#969799"
+        android:textSize="14sp" />
+</LinearLayout>

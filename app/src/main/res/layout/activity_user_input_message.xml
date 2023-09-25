@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".UserInputMessageActivity">
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="スキップ"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="情報を設定してください"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_skip" />
+
+    <TextView
+        android:id="@+id/tv_title_nc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="60dp"
+        android:text="ニックネーム"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <LinearLayout
+        android:id="@+id/name_lin"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/loginbtn_border"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_nc">
+
+        <EditText
+            android:id="@+id/et_nickname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="あなたを何と呼びますか"
+            android:textColor="#202020"
+            android:textColorHint="#C8CACC"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/img_nickname_clean"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="22dp"
+            android:src="@drawable/login_clean"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title_nc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="30dp"
+        android:text="お気に入りのコンテンツ"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_lin" />
+
+    <LinearLayout
+        android:id="@+id/content_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_nc2">
+
+        <TextView
+            android:id="@+id/tv_content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/choose_content_border"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="株を売買する"
+            android:textColor="#646566" />
+
+        <TextView
+            android:id="@+id/tv_content2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/choose_content_border"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="投資する"
+            android:textColor="#646566" />
+
+        <TextView
+            android:id="@+id/tv_content3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/choose_content_border"
+            android:padding="8dp"
+            android:gravity="center"
+            android:text="コンサルティング"
+            android:textColor="#646566" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_complete"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/loginbtn_border_ok"
+        android:text="仕上げる"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/content_lin" />
+</androidx.constraintlayout.widget.ConstraintLayout>
